@@ -10,13 +10,13 @@ const argv = yargs
   .options({
     'h': {
       alias: 'hor',
-      describe: 'Horizontal speed of mouse (default: 10)',
+      describe: 'Horizontal speed of mouse',
       type: 'number',
       default: 10
     },
     'v': {
       alias: 'ver',
-      describe: 'Vertical speed of mouse (default: 10)',
+      describe: 'Vertical speed of mouse',
       type: 'number',
       default: 10
     }
