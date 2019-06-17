@@ -4,34 +4,29 @@ const ioHook = require('iohook');
 const robot = require('robotjs');
 const yargs = require('yargs');
 
-const speed = {
-  x: 10,
-  y: 10
-};
+const speed = {};
 
 const argv = yargs
   .options({
     'h': {
       alias: 'hor',
-      describe: 'Horizontal speed of mouse',
-      type: 'number'
+      describe: 'Horizontal speed of mouse (default: 10)',
+      type: 'number',
+      default: 10
     },
     'v': {
       alias: 'ver',
-      describe: 'Vertical speed of mouse',
-      type: 'number'
+      describe: 'Vertical speed of mouse (default: 10)',
+      type: 'number',
+      default: 10
     }
   })
   .help()
   .version()
   .argv;
 
-if (argv.h) {
-  speed.x = argv.h;
-}
-if (argv.v) {
-  speed.y = argv.v;
-}
+speed.x = argv.h;
+speed.y = argv.v;
 
 ioHook.on('keydown', event => {
   if (event.keycode === 38 || event.keycode === 36 || event.keycode === 23 || event.keycode === 37) {
