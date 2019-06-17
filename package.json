@@ -1,6 +1,6 @@
 {
   "name": "mousejs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Move your mouse with arrow keys on the keyboard",
   "keywords": [
     "cli",
