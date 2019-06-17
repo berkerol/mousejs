@@ -1,11 +1,13 @@
 # Mouse.js
 
+[![NPM](https://nodei.co/npm/mousejs.png)](https://nodei.co/npm/mousejs/)
+
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](https://github.com/berkerol/mousejs/issues)
 [![semistandard](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg)](https://github.com/Flet/semistandard)
 [![ECMAScript](https://img.shields.io/badge/ECMAScript-latest-brightgreen.svg)](https://www.ecma-international.org/ecma-262)
 [![license](https://img.shields.io/badge/license-GNU%20GPL%20v3.0-blue.svg)](https://github.com/berkerol/mousejs/blob/master/LICENSE)
 
-Move your mouse with arrow keys on the keyboard. You can view it [on npm](https://www.npmjs.com/package/mousejs).
+Move your mouse with arrow keys on the keyboard.
 
 ## Features
 
