@@ -1,6 +1,3 @@
-theme:           jekyll-theme-cayman
-title:           Mouse Breaker
-description:     Move your mouse with the arrow keys on the keyboard
-is_user_page:    false
-is_project_page: true
-show_downloads:  true
+theme: jekyll-theme-cayman
+title: Mouse.js
+npm_url: https://www.npmjs.com/package/mousejs

@@ -1,0 +1,37 @@
+{
+  "name": "mousejs",
+  "version": "1.0.0",
+  "description": "Move your mouse with arrow keys on the keyboard",
+  "keywords": [
+    "cli",
+    "hook",
+    "mouse",
+    "robot",
+    "keyboard",
+    "emulation"
+  ],
+  "homepage": "https://berkerol.github.io/mousejs",
+  "bugs": {
+    "url": "https://github.com/berkerol/mousejs/issues",
+    "email": "berk.erol@boun.edu.tr"
+  },
+  "license": "GPL-3.0-or-later",
+  "author": "Berk Erol <berk.erol@boun.edu.tr> (https://berkerol.github.io)",
+  "main": "app.js",
+  "preferGlobal": true,
+  "bin": {
+    "mouse": "./app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/berkerol/mousejs.git"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "iohook": "^0.4.6",
+    "robotjs": "^0.5.1",
+    "yargs": "^13.2.4"
+  }
+}
