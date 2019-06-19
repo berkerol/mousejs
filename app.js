@@ -4,7 +4,8 @@ const ioHook = require('iohook');
 const robot = require('robotjs');
 const yargs = require('yargs');
 
-const speed = {};
+const screenWidth = robot.getScreenSize().width;
+const screenHeight = robot.getScreenSize().height;
 
 const argv = yargs
   .options({
@@ -25,8 +26,10 @@ const argv = yargs
   .version()
   .argv;
 
-speed.x = argv.h;
-speed.y = argv.v;
+const speed = {
+  x: argv.h,
+  y: argv.v
+};
 
 ioHook.on('keydown', event => {
   if (event.keycode === 38 || event.keycode === 36 || event.keycode === 23 || event.keycode === 37) {
@@ -44,11 +47,11 @@ ioHook.on('keydown', event => {
     const mouse = robot.getMousePos();
     if (event.keycode === 57419 && mouse.x > 0) {
       mouse.x -= speed.x;
-    } else if (event.keycode === 57421 && mouse.x < robot.getScreenSize().width) {
+    } else if (event.keycode === 57421 && mouse.x < screenWidth) {
       mouse.x += speed.x;
     } else if (event.keycode === 57416 && mouse.y > 0) {
       mouse.y -= speed.y;
-    } else if (event.keycode === 57424 && mouse.y < robot.getScreenSize().height) {
+    } else if (event.keycode === 57424 && mouse.y < screenHeight) {
       mouse.y += speed.y;
     }
     robot.moveMouse(mouse.x, mouse.y);
