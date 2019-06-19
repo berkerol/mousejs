@@ -7,7 +7,7 @@
 [![ECMAScript](https://img.shields.io/badge/ECMAScript-latest-brightgreen.svg)](https://www.ecma-international.org/ecma-262)
 [![license](https://img.shields.io/badge/license-GNU%20GPL%20v3.0-blue.svg)](https://github.com/berkerol/mousejs/blob/master/LICENSE)
 
-Move your mouse with arrow keys on the keyboard.
+Move your mouse with arrow keys on the keyboard (Meta + Alt + arrow keys).
 
 ## Features
 

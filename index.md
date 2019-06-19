@@ -1,6 +1,6 @@
 # Mouse.js
 
-Move your mouse with arrow keys on the keyboard. You can view it [on npm](https://www.npmjs.com/package/mousejs).
+Move your mouse with arrow keys on the keyboard (Meta + Alt + arrow keys). You can view it [on npm](https://www.npmjs.com/package/mousejs).
 
 ## Features
 
