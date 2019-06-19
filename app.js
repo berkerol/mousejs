@@ -23,7 +23,9 @@ const argv = yargs
     }
   })
   .help()
+  .alias('help', 'H')
   .version()
+  .alias('version', 'V')
   .argv;
 
 const speed = {
