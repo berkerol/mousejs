@@ -33,7 +33,13 @@ const speed = {
 
 ioHook.on('keydown', event => {
   if (event.metaKey && event.altKey) {
-    if (event.keycode === 57419 || event.keycode === 57421 || event.keycode === 57416 || event.keycode === 57424) {
+    if (event.keycode === 28) {
+      if (!event.shiftKey) {
+        robot.mouseClick();
+      } else {
+        robot.mouseClick('right');
+      }
+    } else if (event.keycode === 57419 || event.keycode === 57421 || event.keycode === 57416 || event.keycode === 57424) {
       const mouse = robot.getMousePos();
       if (event.keycode === 57419 && mouse.x > 0) {
         mouse.x -= speed.x;
@@ -62,6 +68,8 @@ ioHook.on('keydown', event => {
 
 ioHook.start();
 
+console.log('Press Meta + Alt + Enter to left click.');
+console.log('Press Meta + Alt + Shift + Enter to right click.');
 console.log('Press Meta + Alt + arrow keys to move the mouse.');
 console.log('Press Meta + Alt + L to increase horizontal speed.');
 console.log('Press Meta + Alt + J to decrease horizontal speed.');
