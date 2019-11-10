@@ -32,6 +32,6 @@
   "dependencies": {
     "iohook": "^0.6.0",
     "robotjs": "^0.5.1",
-    "yargs": "^14.0.0"
+    "yargs": "^15.0.0"
   }
 }
