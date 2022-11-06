@@ -9,13 +9,13 @@ const screenHeight = robot.getScreenSize().height;
 
 const argv = yargs
   .options({
-    'h': {
+    h: {
       alias: 'hor',
       describe: 'Horizontal speed of mouse',
       type: 'number',
       default: 10
     },
-    'v': {
+    v: {
       alias: 'ver',
       describe: 'Vertical speed of mouse',
       type: 'number',

@@ -3,6 +3,7 @@
 [![NPM](https://nodei.co/npm/mousejs.png)](https://nodei.co/npm/mousejs/)
 
 [![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=berkerol_mousejs&metric=alert_status)](https://sonarcloud.io/dashboard?id=berkerol_mousejs)
+[![CI](https://github.com/berkerol/mousejs/actions/workflows/lint.yml/badge.svg?branch=master)](https://github.com/berkerol/mousejs/actions/workflows/lint.yml)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](https://github.com/berkerol/mousejs/issues)
 [![semistandard](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg)](https://github.com/Flet/semistandard)
 [![ECMAScript](https://img.shields.io/badge/ECMAScript-latest-brightgreen.svg)](https://www.ecma-international.org/ecma-262)
@@ -36,6 +37,10 @@ Example | Description
 `$ mouse -h 20` | Starts with a horizontal speed of 20
 `$ mouse -v 15` | Starts with a vertical speed of 15
 `$ mouse -h 20 -v 15` | Starts with a horizontal speed of 20 and a vertical speed of 15
+
+## Continous Integration
+
+It is setup using GitHub Actions in `.github/workflows/lint.yml`
 
 ## Contribution
 
